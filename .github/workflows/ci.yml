@@ -38,5 +38,5 @@ jobs:
         publish_dir: ./_book
     
     - name: push to S3
-      run: aws s3 sync --delete --region ap-northeast-1 cyber-lecture-day4 s3://kuma_deploytoS3
+      run: aws s3 sync --delete --region ap-northeast-1 _book s3://kuma_deploytoS3
 
